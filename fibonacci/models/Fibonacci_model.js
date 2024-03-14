@@ -5,12 +5,12 @@ var CalcPosition = /** @class */ (function () {
         this.initTerm = initTerm;
         this.nPosition = nPosition;
     }
-    CalcPosition.prototype.Fibonacci = function (n) {
-        if (n <= 1) {
+    CalcPosition.prototype.Fibonacci = function (nPosition) {
+        if (nPosition <= 1) {
             return this.initTerm;
         }
         else {
-            return this.Fibonacci(n - 1) + this.Fibonacci(n - 2);
+            return this.Fibonacci(nPosition - 1) + this.Fibonacci(nPosition - 2);
         }
     };
     return CalcPosition;
@@ -22,4 +22,4 @@ para k>2, xk = xk-1 + xk-2. Utilizando uma linguagem de programação com suport
 objetos, defina uma classe que modele a sequência de Fibonacci e exemplifique o cálculo de
 alguns de seus termos. Ilustre a chamada recursiva e identifique chamadas repetidas a um
 mesmo valor construindo uma árvore de chamadas.
- */
+ */ 

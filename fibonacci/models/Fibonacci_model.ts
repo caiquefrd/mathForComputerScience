@@ -5,11 +5,11 @@ class CalcPosition {
         this.initTerm = initTerm;
         this.nPosition = nPosition
     }
-    Fibonacci(n: number): number {
-        if (n <= 1) {
+    Fibonacci(nPosition: number): number {
+        if (nPosition <= 1) {
             return this.initTerm;
           } else {
-              return this.Fibonacci(n - 1) + this.Fibonacci(n - 2)
+              return this.Fibonacci(nPosition - 1) + this.Fibonacci(nPosition - 2)
           }
     }
 }
