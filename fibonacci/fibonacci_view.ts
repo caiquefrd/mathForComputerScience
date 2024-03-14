@@ -3,9 +3,10 @@ import * as promptSync from "./node_modules/prompt-sync";
 
 const prompt = promptSync();
 
-const position = new Fibonacci(1, 5);
+let input:number = prompt('entre com o valor: ');
 
-let input:any = prompt('entre com o valor: ');
-for( let i = 1 ; i <= input ; i++){
-    console.log(position.Fibonacci(i))
+const position = new Fibonacci(1, input);
+
+for( let i = 0 ; i < input ; i ++){
+    console.log(`a posição ${position.Fibonacci(i)} é a soma de ${position.Fibonacci(i - 1)} + ${position.Fibonacci(i - 2)} `)
 }

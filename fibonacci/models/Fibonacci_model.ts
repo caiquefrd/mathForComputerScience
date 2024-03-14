@@ -7,9 +7,9 @@ class CalcPosition {
     }
     Fibonacci(n: number): number {
         if (n <= 1) {
-            return n;
+            return this.initTerm;
           } else {
-            return this.Fibonacci(n - 1) + this.Fibonacci(n - 2);
+              return this.Fibonacci(n - 1) + this.Fibonacci(n - 2)
           }
     }
 }
