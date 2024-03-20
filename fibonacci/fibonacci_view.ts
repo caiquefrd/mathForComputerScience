@@ -1,5 +1,5 @@
 import Fibonacci from "./models/Fibonacci_model";
-import * as promptSync from "./node_modules/prompt-sync";
+import * as promptSync from "./node_modules/prompt-sync"; //necessário instalar prompt-sync :  "npm install prompt-sync"
 
 const prompt = promptSync();
 
