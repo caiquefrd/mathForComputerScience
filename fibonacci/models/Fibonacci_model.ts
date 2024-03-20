@@ -1,4 +1,4 @@
-class Calcthis {
+class CalcFibonacci {
     initTerm:number
     nInput:number
     constructor(initTerm:number, nInput:number){
@@ -15,7 +15,7 @@ class Calcthis {
 }
 
 
-export default Calcthis
+export default CalcFibonacci
 
 
 /* 

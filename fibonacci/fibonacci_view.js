@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Fibonacci_model_1 = require("./models/Fibonacci_model");
-var promptSync = require("./node_modules/prompt-sync");
+var promptSync = require("./node_modules/prompt-sync"); // necessário instalar prompt-sync "npm install prompt-sync"
 var Log_1 = require("./functions/Log");
 var prompt = promptSync();
 var input = prompt('Entre com o a posição: ');
