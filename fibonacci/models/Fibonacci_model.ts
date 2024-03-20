@@ -1,26 +1,16 @@
 class Calcthis {
     initTerm:number
-    nthis:number
-    constructor(initTerm:number, nthis:number){
+    nInput:number
+    constructor(initTerm:number, nInput:number){
         this.initTerm = initTerm;
-        this.nthis = nthis
+        this.nInput = nInput
     }
-    Fibonacci(nthis: number): number {
-        if (nthis <= 1) {
+    Fibonacci(nPosition: number): number {
+        if (nPosition <= 1) {
             return this.initTerm;
           } else {
-              return this.Fibonacci(nthis - 1) + this.Fibonacci(nthis - 2)
+              return this.Fibonacci(nPosition - 1) + this.Fibonacci(nPosition - 2)
           }
-    }
-    Log(input:number):any{
-      for( let i = 0 ; i < input ; i ++ ){
-        if ( i == this.initTerm || i == this.initTerm - 1  ){
-            return console.log(`${this.Fibonacci(i)} é o caso base `)
-        }
-        else {
-            return console.log(`a posição ${this.Fibonacci(i)} é a soma de ${this.Fibonacci(i - 1)} + ${this.Fibonacci(i - 2)} `)
-        }
-    };
     }
 }
 
